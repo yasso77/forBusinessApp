@@ -76,11 +76,33 @@ WSGI_APPLICATION = 'forBusinessWepApp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+	'default': {
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'forBusinessDb',
+		'USER': 'admin',
+		'PASSWORD': 'Cocacola!1977',
+		'HOST':'localhost',
+		'PORT':'3306',
+	}
+}
+
+DATABASES = {
+	'default': {
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'forbxfbx_forBusinessDb',
+		'USER': 'forbxfbx_forBusinessAdmin',
+		'PASSWORD': 'Cocacola!1977',
+		'HOST':'127.0.0.1',
+		'PORT':'3306',
+	}
 }
 
 
