@@ -94,16 +94,16 @@ DATABASES = {
 	}
 }
 
-DATABASES = {
-	'default': {
-		'ENGINE': 'django.db.backends.mysql',
-		'NAME': 'forbxfbx_forBusinessDb',
-		'USER': 'forbxfbx_forBusinessAdmin',
-		'PASSWORD': 'Cocacola!1977',
-		'HOST':'127.0.0.1',
-		'PORT':'3306',
-	}
-}
+# DATABASES = {
+# 	'default': {
+# 		'ENGINE': 'django.db.backends.mysql',
+# 		'NAME': 'forbxfbx_forBusinessDb',
+# 		'USER': 'forbxfbx_forBusinessAdmin',
+# 		'PASSWORD': 'Cocacola!1977',
+# 		'HOST':'127.0.0.1',
+# 		'PORT':'3306',
+# 	}
+# }
 
 
 # Password validation
