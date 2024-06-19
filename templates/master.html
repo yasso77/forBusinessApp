@@ -59,41 +59,36 @@
                     <ul class="list-unstyled topbar-one__info">
                         <li class="topbar-one__info__item">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                            <a href="mailto:contact@forbusinesseg.com.com">contact@forbusinesseg.com</a>
                         </li>
                         <li class="topbar-one__info__item">
                             <i class="fas fa-map-marker"></i>
-                            <a href="tel:+92(8800)-6930">30 Broklyn Golden Street. New York</a>
+                            <a target="_blank" href="https://www.google.com/maps?q=Forbusiness+Business+Services,+6+Gamal+Salem,+Ad+Doqi,+Dokki,+Giza+Governorate&ftid=0x145846cc5b3b174b:0xfbef54ab1b664ae4&hl=en-GB&gl=us&shorturl=1">36 Gamal Salem, Ad Doqi, Dokki, Giza Governorate</a>
                         </li>
                     </ul><!-- /.list-unstyled topbar-one__info -->
                     <div class="topbar-one__right">
                         <div class="topbar-one__nav">
                             <ul>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="{%url 'about'%}">About</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">Help</a>
+                                    <a href="{%url 'faq'%}">Help</a>
                                 </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
+                               
                             </ul>
                         </div>
                         <div class="topbar-one__social">
-                            <a href="https://twitter.com">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                            <a href="https://facebook.com">
+                           
+                            <a href="https://www.facebook.com/groups/hr4business">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
-                            <a href="https://pinterest.com">
-                                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                                <span class="sr-only">Pinterest</span>
+                            <a href="https://www.linkedin.com/company/forbusinessrecruitment/">
+                                <i class="fab fa-linked-p" aria-hidden="true"></i>
+                                <span class="sr-only">Linked In</span>
                             </a>
-                            <a href="https://instagram.com">
+                            <a href="https://www.instagram.com/forbusinessrecruitment/">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
                             </a>
@@ -106,7 +101,7 @@
         <header class="main-header sticky-header sticky-header--normal">
             <div class="main-header__inner">
                 <div class="main-header__logo">
-                    <a href="index.html">
+                    <a href="{%url 'index'%}">
                         <img src="{% static 'assets/images/logo-dark.png'%}" alt="Hiredots HTML" width="125">
                     </a>
                 </div><!-- /.main-header__logo -->
@@ -117,34 +112,17 @@
                 <div class="main-header__menu">
                     <nav class="main-header__nav main-menu">
                         <ul class="main-menu__list">
-                            <li class="dropdown">
-                                <a href="index.html">Home</a>
-                                <ul>
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index-2.html">Home Two</a></li>
-                                    <li><a href="index-3.html">Home Three</a></li>
-                                    <li class="dropdown">
-                                        <a href="#">Header Styles</a>
-                                        <ul>
-                                            <li><a href="index.html">Header One</a></li>
-                                            <li><a href="index-2.html">Header Two</a></li>
-                                            <li><a href="index-3.html">Header Three</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                            <li>
+                                <a href="{%url 'index'%}">Home</a>
+                              
                             </li>
 
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="{%url 'about'%}">About</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#">Pages</a>
-                                <ul>
-                                    <li><a href="team-details.html">Team Details</a></li>
-                                    <li><a href="jobs.html">Jobs</a></li>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                </ul>
+                            <li >
+                                <a href="{%url 'jobs'%}">Jobs</a>
+                              
                             </li>
                             <li class="dropdown">
                                 <a href="#">Services</a>
@@ -174,17 +152,17 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="{%url 'contact'%}">Contact</a>
                             </li>
                         </ul>
                     </nav><!-- /.main-header__nav -->
                     <div class="main-header__call">
                         <i class="icon-telephone"></i>
-                        <a href="tel:+9288006930">+ 92 (8800)-6930</a>
+                        <a href="tel:+9288006930">+ 20 (0100)-6671457</a>
                     </div>
                 </div>
                 <div class="main-header__link">
-                    <a class="main-header__btn" href="contact.html">Book <br> Appointment</a>
+                    <a class="main-header__btn" href="contact.html">Ask  <br> Appointment</a>
                 </div>
                 <div class="mobile-nav__btn mobile-nav__toggler">
                     <span></span>
@@ -252,11 +230,11 @@
                             <div class="footer-widget footer-widget--links">
                                 <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
                                 <ul class="list-unstyled footer-widget__links">
-                                    <li><a href="about.html">About Company</a></li>
-                                    <li><a href="team.html">Meet the Team</a></li>
+                                    <li><a href="{%url 'about'%}">About Company</a></li>
+                                    <li><a href="{%url 'jobs'%}">Jobs</a></li>
                                     <li><a href="blog.html">News & Media</a></li>
                                     <li><a href="project.html">Our Projects</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{%url 'contact'%}">Contact</a></li>
                                 </ul><!-- /.list-unstyled footer-widget__links -->
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-md-6 -->
@@ -264,8 +242,8 @@
                             <div class="footer-widget footer-widget--contact">
                                 <h2 class="footer-widget__title">Links</h2><!-- /.footer-widget__title -->
                                 <ul class="list-unstyled footer-widget__links">
-                                    <li><a href="about.html">Apply Now</a></li>
-                                    <li><a href="contact.html">Contract to Hire</a></li>
+                                    <li><a href="{%url 'index'%}">Apply Now</a></li>
+                                    <li><a href="{%url 'contact'%}">Contract to Hire</a></li>
                                     <li><a href="team.html">Direct Hire</a></li>
                                     <li><a href="history.html">Executive Search</a></li>
                                     <li><a href="about.html">Our Solutions</a></li>
@@ -275,11 +253,12 @@
                         <div class="col-md-6 col-xl-3">
                             <div class="footer-widget footer-widget--time">
                                 <h2 class="footer-widget__title">Contact</h2><!-- /.footer-widget__title -->
-                                <p class="footer-widget__text">66 Road Broklyn Street, 600 <br> New York, USA</p>
+                                <p class="footer-widget__text">6 Gamal Salem, Ad Doqi, Dokki <br> Giza, EGY</p>
                                 <!-- /.footer-widget__text -->
                                 <ul class="list-unstyled footer-widget__info">
-                                    <li><i class="fas fa-envelope"></i> <a href="mailto:needhelp@company.com">needhelp@company.com</a></li>
-                                    <li><i class="fas fa-phone-square"></i> <a href="tel:+92(8800)-6930">+ 92 ( 8800 ) - 6930</a></li>
+                                    <li><i class="fas fa-envelope"></i> <a href="mailto:contact@forbusinesseg.com.com">contact@forbusinesseg.com</a></li>
+                                    <li><i class="fas fa-phone-square"></i> <a href="tel:+200109 820 6020">+ 20 ( 0109 820 6020
+                                        ) </a></li>
                                 </ul><!-- /.list-unstyled -->
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-md-6 -->
@@ -290,17 +269,14 @@
                 <div class="container">
                     <div class="main-footer__bottom__inner">
                         <div class="footer-widget__social">
-                            <a href="https://twitter.com">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
+                           
                             <a href="https://facebook.com">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
                             <a href="https://pinterest.com">
                                 <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                                <span class="sr-only">Pinterest</span>
+                                <span class="sr-only">Linked In</span>
                             </a>
                             <a href="https://instagram.com">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -308,7 +284,8 @@
                             </a>
                         </div><!-- /.footer-widget__social -->
                         <p class="main-footer__copyright">
-                            &copy; Copyright <span class="dynamic-year"></span> by Hiredots HTML Template.
+                            &copy; Copyright <span class="dynamic-year"></span> for Forbusiness Business Services
+
                         </p>
                     </div><!-- /.main-footer__inner -->
                 </div><!-- /.container -->
@@ -333,27 +310,25 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@hiredots.com">needhelp@hiredots.com</a>
+                    <a href="mailto:contact@hiredots.com">contact@hiredots.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="tel:0109 820 6020
+">0109 820 6020
+                    </a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__social">
-                <a href="https://twitter.com">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter</span>
-                </a>
-                <a href="https://facebook.com">
+                <a href="https://www.facebook.com/groups/hr4business">
                     <i class="fab fa-facebook" aria-hidden="true"></i>
                     <span class="sr-only">Facebook</span>
                 </a>
-                <a href="https://pinterest.com">
-                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                    <span class="sr-only">Pinterest</span>
+                <a href="https://www.linkedin.com/company/forbusinessrecruitment/">
+                    <i class="fab fa-linked-p" aria-hidden="true"></i>
+                    <span class="sr-only">Linked In</span>
                 </a>
-                <a href="https://instagram.com">
+                <a href="https://www.instagram.com/forbusinessrecruitment/">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                     <span class="sr-only">Instagram</span>
                 </a>
@@ -366,7 +341,7 @@
         <div class="search-popup__overlay search-toggler"></div>
         <!-- /.search-popup__overlay -->
         <div class="search-popup__content">
-            <form role="search" method="get" class="search-popup__form" action="#">
+            <form role="search" method="get" class="search-popup__form" action="get">
                 <input type="text" id="search" placeholder="Search Here...">
                 <button type="submit" aria-label="search submit" class="hiredots-btn hiredots-btn--base">
                     <span><i class="icon-magnifying-glass"></i></span>

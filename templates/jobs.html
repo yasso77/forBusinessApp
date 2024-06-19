@@ -1,0 +1,189 @@
+{% extends "master.html" %}
+{% load static %}
+{% load custom_filters %}
+
+{% block title %}
+  My Tennis Club - Contact Us
+{% endblock %}
+
+
+{% block content %}
+<style>
+    .jobs{
+        padding: 40px !important;
+    }
+</style>
+<div class="jobs">
+    <div class="container">
+        <div class="jobs__form wow fadeInUp animated" data-wow-duration="1500ms">
+            <div class="jobs__group row gutter-y-20">
+                <div class="col-md-6">
+                    <div class="job__control Jobs__control--full">
+                        <input id="searchJobInput" type="text" onkeyup="searchJobs()" name="jobAnyText" placeholder="All Jobs">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="jobs__control Jobs__control--full">
+                        <input type="text" id="searchLocationInput" onkeyup="searchJobs()" name="jobLocation" placeholder="Any Location">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jobs__form__checkbox">
+            <div class="item">
+                <input type="checkbox" id="freelance" onclick="searchJobs()">
+                <label for="freelance" class="check"></label>
+                <label for="freelance"> Freelance </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="full" onclick="searchJobs()">
+                <label for="full" class="check"></label>
+                <label for="full"> Full Time </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="part" onclick="searchJobs()">
+                <label for="part" class="check"></label>
+                <label for="part"> Part Time </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="temporary" onclick="searchJobs()">
+                <label for="temporary" class="check"></label>
+                <label for="temporary"> Temporary </label>
+            </div>
+        </div>
+        
+        <div class="jobs-list">
+            {% for job in jobList %}
+            <div class="jobs-list__card" data-contract-type="{{ job.contracttype }}">
+                <div class="jobs-list__left">
+                    <div class="jobs-list__logo">
+                        {% if job.recruiterid__recruiterlogo %}
+                        <img src="/media/{{ job.recruiterid__recruiterlogo }}" alt="Logo" width="100">
+                        {% else %}
+                        <p>No Logo</p>
+                        {% endif %}
+                    </div>
+                    <div class="jobs-list__content">
+                        <span class="jobs-list__time"><i class="fas fa-clock"></i> Posted {{ job.createddate|days_since }} days ago </span>
+                        <h3 class="jobs-list__title"><a href="contact.html">{{ job.jobtitle }}</a></h3>
+                        <span class="jobs-list__contracttype">{{ job.contracttype }}</span><br/>
+                        <span class="jobs-list__location">{{ job.placeofwork }}</span>
+                    </div>
+                </div>
+                <div class="jobs-list__right">
+                    <span class="jobs-list__price"><b>{{ job.salary }}</b> Per Year</span>
+                    <a href="{% url 'jobdetails' job.jobid %}" class="hiredots-btn">Apply Now</a>
+
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="jobs-list__card">
+                <div class="jobs-list__left">
+                    <div class="jobs-list__logo">
+                        <img src="assets/images/jobs/logo-2.png" alt="">
+                    </div>
+                    <div class="jobs-list__content">
+                        <span class="jobs-list__time"><i class="fas fa-clock"></i> Posted 3 days ago </span>
+                        <h3 class="jobs-list__title"><a href="contact.html">Administrative Coordinator</a></h3>
+                        <span class="jobs-list__location">San Fransisco, California</span>
+                    </div>
+                </div>
+                <div class="jobs-list__right">
+                    <span class="jobs-list__price"><b>$85,000 - $90,000</b> Per Year</span>
+                    <a href="contact.html" class="hiredots-btn">Apply Now</a>
+                </div>
+            </div>
+            <!-- job card  -->
+            <div class="jobs-list__card">
+                <div class="jobs-list__left">
+                    <div class="jobs-list__logo">
+                        <img src="assets/images/jobs/logo-3.png" alt="">
+                    </div>
+                    <div class="jobs-list__content">
+                        <span class="jobs-list__time"><i class="fas fa-clock"></i> Posted 3 days ago </span>
+                        <h3 class="jobs-list__title"><a href="contact.html">Human Resources Manager</a></h3>
+                        <span class="jobs-list__location">San Fransisco, California</span>
+                    </div>
+                </div>
+                <div class="jobs-list__right">
+                    <span class="jobs-list__price"><b>$85,000 - $90,000</b> Per Year</span>
+                    <a href="contact.html" class="hiredots-btn">Apply Now</a>
+                </div>
+            </div>
+            <!-- job card  -->
+            <div class="jobs-list__card">
+                <div class="jobs-list__left">
+                    <div class="jobs-list__logo">
+                        <img src="assets/images/jobs/logo-4.png" alt="">
+                    </div>
+                    <div class="jobs-list__content">
+                        <span class="jobs-list__time"><i class="fas fa-clock"></i> Posted 3 days ago </span>
+                        <h3 class="jobs-list__title"><a href="contact.html">Graphic & Web Designing</a></h3>
+                        <span class="jobs-list__location">San Fransisco, California</span>
+                    </div>
+                </div>
+                <div class="jobs-list__right">
+                    <span class="jobs-list__price"><b>$85,000 - $90,000</b> Per Year</span>
+                    <a href="contact.html" class="hiredots-btn">Apply Now</a>
+                </div>
+            </div>
+            <!-- job card  -->
+            <div class="jobs-list__card">
+                <div class="jobs-list__left">
+                    <div class="jobs-list__logo">
+                        <img src="assets/images/jobs/logo-5.png" alt="">
+                    </div>
+                    <div class="jobs-list__content">
+                        <span class="jobs-list__time"><i class="fas fa-clock"></i> Posted 3 days ago </span>
+                        <h3 class="jobs-list__title"><a href="contact.html">Digital Marketing Assistant</a></h3>
+                        <span class="jobs-list__location">San Fransisco, California</span>
+                    </div>
+                </div>
+                <div class="jobs-list__right">
+                    <span class="jobs-list__price"><b>$85,000 - $90,000</b> Per Year</span>
+                    <a href="contact.html" class="hiredots-btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function searchJobs() {
+        var jobInput = document.getElementById('searchJobInput');
+        var locationInput = document.getElementById('searchLocationInput');
+        
+        var jobFilter = jobInput.value.toLowerCase();
+        var locationFilter = locationInput.value.toLowerCase();
+        
+        var selectedContractTypes = [];
+        if (document.getElementById('freelance').checked) selectedContractTypes.push('Freelance');
+        if (document.getElementById('full').checked) selectedContractTypes.push('Full Time');
+        if (document.getElementById('part').checked) selectedContractTypes.push('Part Time');
+        if (document.getElementById('temporary').checked) selectedContractTypes.push('Temporary');
+        
+        var jobCards = document.getElementsByClassName('jobs-list__card');
+        
+        for (var i = 0; i < jobCards.length; i++) {
+            var jobTitle = jobCards[i].getElementsByClassName('jobs-list__title')[0];
+            var jobLocation = jobCards[i].getElementsByClassName('jobs-list__location')[0];
+            var jobContractType = jobCards[i].getAttribute('data-contract-type');
+            
+            var jobContent = jobTitle.textContent || jobTitle.innerText;
+            var locationContent = jobLocation.textContent || jobLocation.innerText;
+            
+            var matchesTextFilters = (jobContent.toLowerCase().indexOf(jobFilter) > -1 || jobFilter === '') &&
+                                     (locationContent.toLowerCase().indexOf(locationFilter) > -1 || locationFilter === '');
+            
+            var matchesContractType = selectedContractTypes.length === 0 || selectedContractTypes.includes(jobContractType);
+            
+            if (matchesTextFilters && matchesContractType) {
+                jobCards[i].style.display = "";
+            } else {
+                jobCards[i].style.display = "none";
+            }
+        }
+    }
+</script>
+        {% endblock %}
