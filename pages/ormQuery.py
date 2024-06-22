@@ -1,6 +1,6 @@
 from django.utils import timezone
 from jobs.models import Jobs,Recruiters
-from applicants.models import Applicant,ApplicantOnJobs
+from applicants.models import ApplicantOnJobs
 
 
 class jobQueries():
@@ -19,7 +19,11 @@ class jobQueries():
     
     def get_jobDetails(jobid):
         jobdetails = Jobs.objects.filter(jobid=jobid).select_related('recruiterid').values(
-        'jobid', 'jobcode', 'contracttype', 'jobtitle', 'salary', 'placeofwork', 'validdate', 'createddate',
+        'jobid', 'jobcode','qualifications','description', 'contracttype', 'jobtitle', 'salary', 'placeofwork', 'validdate', 'createddate',
         'recruiterid__recruitername', 'recruiterid__recruiterlogo'
     ).first()
         return jobdetails
+    
+    def get_jobInstance(jobid):
+        jobinstance = Jobs.objects.filter(jobid=jobid).first()
+        return jobinstance

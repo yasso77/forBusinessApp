@@ -36,7 +36,8 @@ class Jobs(models.Model):
     jobtitle=models.CharField(max_length=255,verbose_name='Job Name')
     recruiterid=models.ForeignKey(Recruiters,on_delete=models.PROTECT,default=1,verbose_name='Recruiter Name')
     jobfield=models.CharField(max_length=225,verbose_name='Job Field')
-    description=models.TextField(null=True, default='D',verbose_name='Job Description')
+    description=models.TextField(null=True, verbose_name='Job Description')
+    qualifications=models.TextField(null=True, verbose_name='Qualifications')
     gender = models.CharField(max_length=10, choices=CommonFunctions.genderList(), null=True, blank=True,verbose_name='Gender required')
     nationality=models.CharField(max_length=225,null=False,choices=CommonFunctions.countryList(),verbose_name='Nationality')
     placeofwork=models.CharField(max_length=225,null=True,verbose_name='Job Location')
@@ -49,7 +50,7 @@ class Jobs(models.Model):
    
 
     def __str__(self) -> str:
-        return self.jobcode    
+        return self.jobtitle    
     
     class Meta:
         verbose_name = "Job"

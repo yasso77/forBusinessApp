@@ -1,0 +1,41 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block content %}
+    <h1>Applicants for {{ job.jobtitle }}</h1>
+    <form method="get" action="">
+        <input type="text" name="q" placeholder="Search applicants..." value="{{ search_query }}">
+        <button type="submit">Search</button>
+    </form>
+
+    <table id="result_list" style="width:100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Cover Letter</th>
+                <th>CV</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for applicant in applicants %}
+            <tr>
+                <td>{{ applicant.fullName }}</td>
+                <td>{{ applicant.mobile }}</td>
+                <td>{{ applicant.email }}</td>
+                <td>{{ applicant.gender }}</td>
+                <td>{{ applicant.coverletter }}</td>
+                <td>
+                    {% if applicant.cvFile %}
+                    <a href="{{ applicant.cvFile.url }}" download>Download CV</a>
+                    {% else %}
+                    No CV
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

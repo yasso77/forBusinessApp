@@ -1,0 +1,29 @@
+
+{% extends "master.html" %}
+{% load static %}
+
+
+{% block title %}
+  4 Business Services - Confirmation Message
+{% endblock %}
+
+
+{% block content %}
+        <!-- 404 Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                        <h1 style="color:darkgreen;" class="display-1">Done</h1>
+                        <h1 class="mb-4">Confirmation Message</h1>
+                        <p style="font-size: larger;" class="mb-6">{{msg}}</p>
+                        <a class="hiredots-btn py-3 px-5" href="{%url 'index'%}">Go Back To Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 404 End -->
+        {% endblock %}
+        
+ 

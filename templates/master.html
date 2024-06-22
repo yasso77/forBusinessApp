@@ -85,12 +85,16 @@
                                 <span class="sr-only">Facebook</span>
                             </a>
                             <a href="https://www.linkedin.com/company/forbusinessrecruitment/">
-                                <i class="fab fa-linked-p" aria-hidden="true"></i>
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
                                 <span class="sr-only">Linked In</span>
                             </a>
                             <a href="https://www.instagram.com/forbusinessrecruitment/">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
+                            </a>
+                            <a href="https://wa.me/+201001711441?text=ForBusiness Services" target="_blank">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                <span class="sr-only">Whatsapp</span>
                             </a>
                         </div><!-- /.topbar-one__social -->
                     </div><!-- /.topbar-one__right -->
@@ -102,13 +106,13 @@
             <div class="main-header__inner">
                 <div class="main-header__logo">
                     <a href="{%url 'index'%}">
-                        <img src="{% static 'assets/images/logo-dark.png'%}" alt="Hiredots HTML" width="125">
+                        <img src="{% static 'assets/images/forBusinessLogo.png'%}" alt="For Business Group" width="180">
                     </a>
                 </div><!-- /.main-header__logo -->
-                <a href="#" class="search-toggler main-header__search">
+                {% comment %} <a href="#" class="search-toggler main-header__search">
                     <i class="icon-magnifying-glass" aria-hidden="true"></i>
                     <span class="sr-only">Search</span>
-                </a><!-- /.search-toggler -->
+                </a><!-- /.search-toggler --> {% endcomment %}
                 <div class="main-header__menu">
                     <nav class="main-header__nav main-menu">
                         <ul class="main-menu__list">
@@ -137,7 +141,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown">
+                            {% comment %} <li class="dropdown">
                                 <a href="project.html">Projects</a>
                                 <ul>
                                     <li><a href="project.html">Projects</a></li>
@@ -150,7 +154,7 @@
                                     <li><a href="blog.html">News</a></li>
                                     <li><a href="blog-details.html">News Details</a></li>
                                 </ul>
-                            </li>
+                            </li> {% endcomment %}
                             <li>
                                 <a href="{%url 'contact'%}">Contact</a>
                             </li>
@@ -158,7 +162,7 @@
                     </nav><!-- /.main-header__nav -->
                     <div class="main-header__call">
                         <i class="icon-telephone"></i>
-                        <a href="tel:+9288006930">+ 20 (0100)-6671457</a>
+                        <a href="tel:+201006671457">+ 20 (0100)-6671457</a>
                     </div>
                 </div>
                 <div class="main-header__link">
@@ -209,7 +213,7 @@
                         <div class="col-md-6 col-xl-5">
                             <div class="footer-widget footer-widget--about">
                                 <a href="index.html" class="footer-widget__logo">
-                                    <img src="{% static 'assets/images/logo-light.png'%}" width="125" alt="Hiredots HTML Template">
+                                    <img src="{% static 'assets/images/logo-light.png'%}" width="180" alt="Hiredots HTML Template">
                                 </a>
                                 <p class="footer-widget__text">Lorem ipsum dolor sit amet, consect etur adi pisicing elit <br>
                                     sed do eiusmod tempor incididunt ut labore.</p>
@@ -270,17 +274,21 @@
                     <div class="main-footer__bottom__inner">
                         <div class="footer-widget__social">
                            
-                            <a href="https://facebook.com">
+                            <a href="https://www.facebook.com/groups/hr4business">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
-                            <a href="https://pinterest.com">
-                                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                            <a href="https://www.linkedin.com/company/forbusinessrecruitment/">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
                                 <span class="sr-only">Linked In</span>
                             </a>
-                            <a href="https://instagram.com">
+                            <a href="https://www.instagram.com/forbusinessrecruitment/">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
+                            </a>
+                            <a href="https://wa.me/+201001711441?text=ForBusiness Services" target="_blank">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                <span class="sr-only">Whatsapp</span>
                             </a>
                         </div><!-- /.footer-widget__social -->
                         <p class="main-footer__copyright">
@@ -325,19 +333,23 @@
                     <span class="sr-only">Facebook</span>
                 </a>
                 <a href="https://www.linkedin.com/company/forbusinessrecruitment/">
-                    <i class="fab fa-linked-p" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                     <span class="sr-only">Linked In</span>
                 </a>
                 <a href="https://www.instagram.com/forbusinessrecruitment/">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                     <span class="sr-only">Instagram</span>
                 </a>
+                <a href="https://wa.me/+201001711441?text=ForBusiness Services" target="_blank">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    <span class="sr-only">Whatsapp</span>
+                </a>
             </div><!-- /.mobile-nav__social -->
         </div>
         <!-- /.mobile-nav__content -->
     </div>
     <!-- /.mobile-nav__wrapper -->
-    <div class="search-popup">
+    {% comment %} <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
         <!-- /.search-popup__overlay -->
         <div class="search-popup__content">
@@ -349,7 +361,7 @@
             </form>
         </div>
         <!-- /.search-popup__content -->
-    </div>
+    </div> {% endcomment %}
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top">

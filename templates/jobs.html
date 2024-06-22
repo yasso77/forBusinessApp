@@ -13,6 +13,19 @@
         padding: 40px !important;
     }
 </style>
+<section class="page-header">
+    <div class="page-header__bg"></div>
+    <div class="page-header__shape"><img src="{% static 'assets/images/shapes/page-header-shape.png' %}" alt="hiredots"></div>
+    <!-- /.page-header__bg -->
+    <div class="container">
+        <h2 class="page-header__title">Jobs List</h2>
+        <ul class="hiredots-breadcrumb list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><span>Jobs List</span></li>
+        </ul><!-- /.thm-breadcrumb list-unstyled -->
+    </div><!-- /.container -->
+</section><!-- /.page-header -->
+
 <div class="jobs">
     <div class="container">
         <div class="jobs__form wow fadeInUp animated" data-wow-duration="1500ms">
@@ -60,7 +73,7 @@
                         {% if job.recruiterid__recruiterlogo %}
                         <img src="/media/{{ job.recruiterid__recruiterlogo }}" alt="Logo" width="100">
                         {% else %}
-                        <p>No Logo</p>
+                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
                         {% endif %}
                     </div>
                     <div class="jobs-list__content">

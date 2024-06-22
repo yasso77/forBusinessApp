@@ -2251,7 +2251,7 @@ h6 {
 --------------------------------------------------------------*/
 .contact-one {
   position: relative;
-  padding: 120px 0;
+  padding: 40px 0;
 }
 @media (max-width: 767px) {
   .contact-one {
@@ -3089,7 +3089,7 @@ h6 {
   justify-content: space-between;
   margin-right: auto;
   background-color: var(--hiredots-gray, #f0f3f9);
-  padding: 0 50px;
+  padding: 0 15px;
   display: none;
 }
 @media (min-width: 1200px) {
@@ -7944,7 +7944,7 @@ body.megamenu-popup-active .mobile-nav__content {
 --------------------------------------------------------------*/
 .feature-one {
   position: relative;
-  padding: 120px 0;
+  padding: 40px 0;
 }
 @media (max-width: 767px) {
   .feature-one {

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-  My Tennis Club - Contact Us
+  4 Business Services - Contact Us
 {% endblock %}
 
 
@@ -30,7 +30,7 @@
 
                           <h6 class="sec-title__tagline">Contact us</h6><!-- /.sec-title__tagline -->
 
-                          <h3 class="sec-title__title">Feel Free to Get in Touch <br> with Hiredots</h3><!-- /.sec-title__title -->
+                          <h3 class="sec-title__title">Feel Free to Get in Touch <br> with For Business Services</h3><!-- /.sec-title__title -->
                       </div><!-- /.sec-title -->
                       <p class="contact-one__text">Aliquam hendrerit a augue insuscipit. Etiam aliquam massa quis des
                           mauris commodo venenatis ligula commodo leez sed blandit convallis dignissim onec vel
@@ -44,9 +44,22 @@
                               <div class="contact-one__info__content">
                                   <p class="contact-one__info__text">Have Question?</p>
                                   <!-- /.contact-one__info__text -->
-                                  <h4 class="contact-one__info__title">Free <a href="tel:+92(8800)-8960">+23 (000)-9850</a></h4><!-- /.contact-one__info__title -->
+                                  <h4 class="contact-one__info__title"> <a href="tel:+201006671457">+ 20 (0100)-6671457</a></h4><!-- /.contact-one__info__title -->
                               </div><!-- /.contact-one__info__content -->
                           </li>
+                          <li class="contact-one__info__item">
+                            <div class="contact-one__info__icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div><!-- /.contact-one__info__icon -->
+                            <div class="contact-one__info__content">
+                                <p class="contact-one__info__text">Contact via WhatsApp</p>
+                                <!-- /.contact-one__info__text -->
+                                <h4 class="contact-one__info__title">
+                                    <a href="https://wa.me/+201001711441?text=ForBusiness Services" target="_blank">+201001711441</a>
+                                </h4>
+                                <!-- /.contact-one__info__title -->
+                            </div><!-- /.contact-one__info__content -->
+                        </li>
                           <li class="contact-one__info__item">
                               <div class="contact-one__info__icon">
                                   <i class="icon-message"></i>
@@ -54,7 +67,7 @@
                               <div class="contact-one__info__content">
                                   <p class="contact-one__info__text">Write Email </p>
                                   <!-- /.contact-one__info__text -->
-                                  <h4 class="contact-one__info__title"><a href="mailto:needhelp@company.com">needhelp@company.com</a></h4>
+                                  <h4 class="contact-one__info__title"><a href="mailto:contact@forbusinesseg.com">contact@forbusinesseg.com</a></h4>
                                   <!-- /.contact-one__info__title -->
                               </div><!-- /.contact-one__info__content -->
                           </li>
@@ -64,7 +77,7 @@
                               </div><!-- /.contact-one__info__icon -->
                               <div class="contact-one__info__content">
                                   <p class="contact-one__info__text">Visit Anytime</p> <!-- /.contact-one__info__text -->
-                                  <h4 class="contact-one__info__title"><a href="#">30 broklyn golden street. New York</a></h4><!-- /.contact-one__info__title -->
+                                  <h4 class="contact-one__info__title"><a href="#">36 Gamal Salem, Ad Doqi, Dokki, Giza Governorate</a></h4><!-- /.contact-one__info__title -->
                               </div><!-- /.contact-one__info__content -->
                           </li>
                       </ul><!-- /.list-unstyled -->
@@ -72,26 +85,27 @@
               </div><!-- /.col-lg-6 -->
               <div class="col-lg-6">
                   <div class="contact-one__left">
-                      <form class="contact-one__form contact-form-validated form-one background-base wow fadeInUp" data-wow-duration="1500ms" action="inc/sendemail.php">
-                          <div class="form-one__group">
-                              <div class="form-one__control form-one__control--full">
-                                  <input type="text" name="name" placeholder="Your name">
-                              </div><!-- /.form-one__control form-one__control--full -->
-                              <div class="form-one__control form-one__control--full">
-                                  <input type="email" name="email" placeholder="Email address">
-                              </div><!-- /.form-one__control form-one__control--full -->
-                              <div class="form-one__control form-one__control--full">
-                                  <input type="text" name="phone" placeholder="Phone number">
-                              </div><!-- /.form-one__control form-one__control--full -->
-
-                              <div class="form-one__control form-one__control--full">
-                                  <textarea name="message" placeholder="Write  a message"></textarea><!-- /# -->
-                              </div><!-- /.form-one__control -->
-                              <div class="form-one__control form-one__control--full">
-                                  <button type="submit" class="hiredots-btn hiredots-btn--white"><span>send a message</span></button>
-                              </div><!-- /.form-one__control -->
-                          </div><!-- /.form-one__group -->
-                      </form>
+                    <form class="contact-one__form contact-form-validated form-one background-base wow fadeInUp" data-wow-duration="1500ms" method="post" action="{% url 'send_email' %}">
+                        {% csrf_token %}
+                        <div class="form-one__group">
+                            <div class="form-one__control form-one__control--full">
+                                <input type="text" name="name" placeholder="Your name" required>
+                            </div><!-- /.form-one__control form-one__control--full -->
+                            <div class="form-one__control form-one__control--full">
+                                <input type="email" name="email" placeholder="Email address" required>
+                            </div><!-- /.form-one__control form-one__control--full -->
+                            <div class="form-one__control form-one__control--full">
+                                <input type="text" name="phone" placeholder="Phone number" required>
+                            </div><!-- /.form-one__control form-one__control--full -->
+                            <div class="form-one__control form-one__control--full">
+                                <textarea name="message" placeholder="Write a message" required></textarea><!-- /# -->
+                            </div><!-- /.form-one__control -->
+                            <div class="form-one__control form-one__control--full">
+                                <button type="submit" class="hiredots-btn hiredots-btn--white"><span>Send a message</span></button>
+                            </div><!-- /.form-one__control -->
+                        </div><!-- /.form-one__group -->
+                    </form>
+                    
                   </div>
 
               </div><!-- /.col-lg-6 -->

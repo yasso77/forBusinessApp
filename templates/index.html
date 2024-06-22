@@ -1,7 +1,7 @@
 {% extends "master.html" %}
-
+{%load static %}
 {% block title %}
- Contact Us - My Tennis Club
+ ForBusiness Services Group
 {% endblock %}
 
 
@@ -24,14 +24,14 @@
 }'>
           <div class="item" data-dot="<button>1/</button>">
               <div class="main-slider-one__item">
-                  <div class="main-slider-one__bg" style="background-image: url(assets/images/backgrounds/slider-1-1.jpg);"></div>
+                  <div class="main-slider-one__bg" style="background-image: url({% static 'assets/images/backgrounds/slider-1-1.jpg'%});"></div>
                   <div class="main-slider-one__overlay"></div>
-                  <div class="main-slider-one__shape" style="background-image: url(assets/images/shapes/slider-1-shape-1.png);"></div>
+                  <div class="main-slider-one__shape" style="background-image: url({% static 'assets/images/shapes/slider-1-shape-1.png'%});"></div>
                   <div class="container">
                       <div class="row">
                           <div class="col-md-12">
                               <div class="main-slider-one__content">
-                                  <div class="main-slider-one__image"><img src="assets/images/shapes/slider-1-shape-2.png" alt="hiredots"></div><!-- slider-layer -->
+                                  <div class="main-slider-one__image"><img src="{% static 'assets/images/shapes/slider-1-shape-2.png'%}" alt="4 Business"></div><!-- slider-layer -->
                                   <h2 class="main-slider-one__title">Right<br> People for<br> the Business</h2><!-- slider-title -->
                                   <div class="main-slider-one__btn">
                                       <a href="services.html" class="hiredots-btn"><span>Discover More</span></a><!-- slider-btn -->
@@ -44,14 +44,14 @@
           </div>
           <div class="item" data-dot="<button>2/</button>">
               <div class="main-slider-one__item">
-                  <div class="main-slider-one__bg" style="background-image: url(assets/images/backgrounds/slider-1-2.jpg);"></div>
+                  <div class="main-slider-one__bg" style="background-image: url({% static 'assets/images/backgrounds/slider-1-2.jpg'%});"></div>
                   <div class="main-slider-one__overlay"></div>
-                  <div class="main-slider-one__shape" style="background-image: url(assets/images/shapes/slider-1-shape-1.png);"></div>
+                  <div class="main-slider-one__shape" style="background-image: url({% static 'assets/images/shapes/slider-1-shape-1.png'%});"></div>
                   <div class="container">
                       <div class="row">
                           <div class="col-md-12">
                               <div class="main-slider-one__content">
-                                  <div class="main-slider-one__image"><img src="assets/images/shapes/slider-1-shape-2.png" alt="hiredots"></div><!-- slider-layer -->
+                                  <div class="main-slider-one__image"><img src="{% static 'assets/images/shapes/slider-1-shape-2.png'%}" alt="4 Business"></div><!-- slider-layer -->
                                   <h2 class="main-slider-one__title">Right<br> People for<br> the Business</h2><!-- slider-title -->
                                   <div class="main-slider-one__btn">
                                       <a href="services.html" class="hiredots-btn"><span>Discover More</span></a><!-- slider-btn -->
@@ -64,14 +64,14 @@
           </div>
           <div class="item" data-dot="<button>3</button>">
               <div class="main-slider-one__item">
-                  <div class="main-slider-one__bg" style="background-image: url(assets/images/backgrounds/slider-1-3.jpg);"></div>
+                  <div class="main-slider-one__bg" style="background-image: url({% static 'assets/images/backgrounds/slider-1-3.jpg'%});"></div>
                   <div class="main-slider-one__overlay"></div>
-                  <div class="main-slider-one__shape" style="background-image: url(assets/images/shapes/slider-1-shape-1.png);"></div>
+                  <div class="main-slider-one__shape" style="background-image: url({% static 'assets/images/shapes/slider-1-shape-1.png'%});"></div>
                   <div class="container">
                       <div class="row">
                           <div class="col-md-12">
                               <div class="main-slider-one__content">
-                                  <div class="main-slider-one__image"><img src="assets/images/shapes/slider-1-shape-2.png" alt="hiredots"></div><!-- slider-layer -->
+                                  <div class="main-slider-one__image"><img src="{% static 'assets/images/shapes/slider-1-shape-2.png'%}" alt="4 Business"></div><!-- slider-layer -->
                                   <h2 class="main-slider-one__title">Right<br> People for<br> the Business</h2><!-- slider-title -->
                                   <div class="main-slider-one__btn">
                                       <a href="services.html" class="hiredots-btn"><span>Discover More</span></a><!-- slider-btn -->
@@ -92,7 +92,7 @@
               <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                   <div class="feature-one__item text-center">
                       <div class="feature-one__item__img">
-                          <img src="assets/images/resources/feature-1-1.jpg" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/feature-1-1.jpg'%}" alt="4 Business">
                       </div>
                       <div class="feature-one__item__content">
                           <div class="feature-one__item__ball"></div>
@@ -106,7 +106,7 @@
               <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                   <div class="feature-one__item text-center">
                       <div class="feature-one__item__img">
-                          <img src="assets/images/resources/feature-1-2.jpg" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/feature-1-2.jpg'%}"alt="4 Business">
                       </div>
                       <div class="feature-one__item__content">
                           <div class="feature-one__item__ball"></div>
@@ -120,7 +120,7 @@
               <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                   <div class="feature-one__item text-center">
                       <div class="feature-one__item__img">
-                          <img src="assets/images/resources/feature-1-3.jpg" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/feature-1-3.jpg'%}" alt="4 Business">
                       </div>
                       <div class="feature-one__item__content">
                           <div class="feature-one__item__ball"></div>
@@ -141,10 +141,10 @@
               <div class="col-xl-6">
                   <div class="about-one__image wow fadeInLeft" data-wow-delay="300ms">
                       <div class="about-one__image-one">
-                          <img src="assets/images/resources/about-1-1.jpg" alt="hiredots">
-                          <img class="about-one__image-one__shape" src="assets/images/resources/about-1-shape-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/about-1-1.jpg'%}" alt="4 Business">
+                          <img class="about-one__image-one__shape" src="{% static 'assets/images/resources/about-1-shape-1.png'%}" alt="4 Business">
                       </div>
-                      <div class="about-one__image-icon"><img src="assets/images/resources/about-1-bulb.png" alt="hiredots"></div>
+                      <div class="about-one__image-icon"><img src="{% static 'assets/images/resources/about-1-bulb.png'%}" alt="4 Business"></div>
                   </div><!-- /.why-choose-two__image -->
               </div><!-- /.col-lg-6 -->
               <div class="col-xl-6 wow fadeInRight" data-wow-delay="300ms">
@@ -170,9 +170,9 @@
                               </div>
                               <div class="about-one__content__author">
                                   <div class="about-one__content__author__thumb">
-                                      <img src="assets/images/resources/about-1-author.jpg" alt="hiredots">
+                                      <img src="{% static 'assets/images/resources/about-1-author.jpg'%}" alt="4 Business">
                                   </div>
-                                  <div class="about-one__content__author__meta"><img src="assets/images/resources/about-sign.png" alt="hiredots">Co Founder</div>
+                                  <div class="about-one__content__author__meta"><img src="{% static 'assets/images/resources/about-sign.png'%}" alt="4 Business">Co Founder</div>
                               </div>
                           </div>
                           <div class="col-md-6">
@@ -237,7 +237,7 @@
               <div class="col-md-6 col-lg-4">
                   <div class="service-one-card service-card-two" data-wow-duration="1500ms" data-wow-delay="0ms">
                       <div class="service-one-card__image">
-                          <img src="assets/images/services/sv-1.jpg" alt="HR Consulting">
+                          <img src="{% static 'assets/images/services/sv-1.jpg'%}" alt="HR Consulting">
                       </div><!-- /.service-one-card__image -->
                       <div class="service-one-card__content">
                           <div class="service-one-card__icon">
@@ -260,7 +260,7 @@
               <div class="col-md-6 col-lg-4">
                   <div class="service-one-card service-card-two" data-wow-duration="1500ms" data-wow-delay="1ms">
                       <div class="service-one-card__image">
-                          <img src="assets/images/services/sv-2.jpg" alt="Tech Resources">
+                          <img src="{% static 'assets/images/services/sv-2.jpg'%}" alt="Tech Resources">
                       </div><!-- /.service-one-card__image -->
                       <div class="service-one-card__content">
                           <div class="service-one-card__icon">
@@ -283,7 +283,7 @@
               <div class="col-md-6 col-lg-4">
                   <div class="service-one-card service-card-two" data-wow-duration="1500ms" data-wow-delay="1ms">
                       <div class="service-one-card__image">
-                          <img src="assets/images/services/sv-3.jpg" alt="Staffing Solution">
+                          <img src="{% static 'assets/images/services/sv-3.jpg'%}" alt="Staffing Solution">
                       </div><!-- /.service-one-card__image -->
                       <div class="service-one-card__content">
                           <div class="service-one-card__icon">
@@ -307,7 +307,7 @@
       </div><!-- /.container -->
   </section><!-- /.service-one -->
   <!-- Call To Action Start -->
-  <section class="cta-one" style="background-image: url(assets/images/backgrounds/video-bg-1-1.png);">
+  <section class="cta-one" style="background-image: url({% static 'assets/images/backgrounds/video-bg-1-1.png'%});">
       <div class="container">
           <div class="row">
               <div class="col-md-8 col-xl-8 wow fadeInLeft" data-wow-delay="200ms">
@@ -393,34 +393,34 @@
               }
               }'>
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                       <div class="client-carousel__one__item">
-                          <img src="assets/images/resources/brand-1-1.png" alt="hiredots">
+                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
                       </div><!-- /.owl-slide-item-->
                   </div><!-- /.thm-owl__slider -->
               </div>
@@ -428,126 +428,23 @@
           <div class="client-carousel__border"></div>
       </div><!-- /.container -->
   </div><!-- /.client-carousel -->
-  <div class="project-one">
-      <div class="container">
-          <div class="sec-title text-center">
-
-              <h6 class="sec-title__tagline">Our projects</h6><!-- /.sec-title__tagline -->
-
-              <h3 class="sec-title__title">Recent Closed Projects</h3><!-- /.sec-title__title -->
-          </div><!-- /.sec-title -->
-      </div>
-      <div class="project-one__carousel hiredots-owl__carousel hiredots-owl__carousel--with-shadow hiredots-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
-"items": 1,
-"margin": 30,
-"loop": false,
-"smartSpeed": 700,
-"nav": false,
-"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-"dots": false,
-"autoplay": false,
-"responsive": {
-"0": {
-  "items": 1
-},
-"576": {
-  "items": 2
-},
-"992": {
-  "items": 3
-},
-"1300": {
-  "items": 3.5
-},
-"1600": {
-  "items": 4.83
-}
-}
-}'>
-          <div class="item">
-              <div class="project-one__card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='1ms'>
-                  <div class="project-one__img">
-                      <img src="assets/images/project/project-1-1.jpg" alt="Staffing Solution">
-                  </div>
-                  <div class="project-one__content">
-                      <span class="project-one__tagline">Resources</span>
-                      <h3 class="project-one__title"><a href="project-details.html">Staffing Solution</a></h3>
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <div class="project-one__card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='1ms'>
-                  <div class="project-one__img">
-                      <img src="assets/images/project/project-1-2.jpg" alt="Staffing Solution">
-                  </div>
-                  <div class="project-one__content">
-                      <span class="project-one__tagline">Resources</span>
-                      <h3 class="project-one__title"><a href="project-details.html">Staffing Solution</a></h3>
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <div class="project-one__card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='1ms'>
-                  <div class="project-one__img">
-                      <img src="assets/images/project/project-1-3.jpg" alt="Staffing Solution">
-                  </div>
-                  <div class="project-one__content">
-                      <span class="project-one__tagline">Resources</span>
-                      <h3 class="project-one__title"><a href="project-details.html">Staffing Solution</a></h3>
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <div class="project-one__card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='1ms'>
-                  <div class="project-one__img">
-                      <img src="assets/images/project/project-1-4.jpg" alt="Staffing Solution">
-                  </div>
-                  <div class="project-one__content">
-                      <span class="project-one__tagline">Resources</span>
-                      <h3 class="project-one__title"><a href="project-details.html">Staffing Solution</a></h3>
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <div class="project-one__card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='1ms'>
-                  <div class="project-one__img">
-                      <img src="assets/images/project/project-1-5.jpg" alt="Staffing Solution">
-                  </div>
-                  <div class="project-one__content">
-                      <span class="project-one__tagline">Resources</span>
-                      <h3 class="project-one__title"><a href="project-details.html">Staffing Solution</a></h3>
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <div class="project-one__card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='1ms'>
-                  <div class="project-one__img">
-                      <img src="assets/images/project/project-1-6.jpg" alt="Staffing Solution">
-                  </div>
-                  <div class="project-one__content">
-                      <span class="project-one__tagline">Resources</span>
-                      <h3 class="project-one__title"><a href="project-details.html">Staffing Solution</a></h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+  
   <!-- Call To Action Start -->
-  <section class="cta-two" style="background-image: url(assets/images/resources/cta-2-2.png);">
-      <div class="cta-two__shape-one"><img src="assets/images/shapes/cta-2-shape-1.png" alt="hiredots"></div>
-      <div class="cta-two__shape-two"><img src="assets/images/shapes/cta-2-shape-2.png" alt="hiredots"></div>
+  <section class="cta-two" style="background-image: url({% static 'assets/images/resources/cta-2-2.png'%});">
+      <div class="cta-two__shape-one"><img src="{% static 'assets/images/shapes/cta-2-shape-1.png'%}" alt="4 Business"></div>
+      <div class="cta-two__shape-two"><img src="{% static 'assets/images/shapes/cta-2-shape-2.png'%}" alt="4 Business"></div>
       <div class="container">
           <div class="row">
               <div class="col-lg-7 wow fadeInLeft" data-wow-delay="200ms">
                   <div class="cta-two__content">
-                      <div class="cta-two__sub-title"><img src="assets/images/resources/cta-2-sub-title.png" alt="hiredots"></div>
+                      <div class="cta-two__sub-title"><img src="{% static 'assets/images/resources/cta-2-sub-title.png'%}" alt="4 Business"></div>
                       <h2 class="cta-two__title">Hire Your Next Candidate on Hiredots</h2>
                       <a href="about.html" class="hiredots-btn"><span>Discover more</span></a><!-- /.btn -->
                   </div>
               </div>
               <div class="col-lg-5 wow fadeInRight" data-wow-delay="300ms">
                   <div class="cta-two__image">
-                      <img src="assets/images/shapes/cta-2-1.png" alt="hiredots">
+                      <img src="{% static 'assets/images/shapes/cta-2-1.png'%}" alt="4 Business">
                   </div>
               </div>
           </div>
@@ -556,7 +453,7 @@
   <!-- Call To Action End -->
   <div class="testimonials-one background-gray">
       <div class="testimonials-one__shape">
-          <img src="assets/images/shapes/testimonail-share.png" alt="">
+          <img src="{% static 'assets/images/shapes/testimonail-share.png'%}" alt="">
       </div>
       <div class="container">
           <div class="row">
@@ -600,7 +497,7 @@
                                   <div class="testimonials-card__inner">
                                       <div class="testimonials-card__top">
                                           <div class="testimonials-card__image">
-                                              <img src="assets/images/resources/testi-1-1.jpg" alt="Kevin martin">
+                                              <img src="{% static 'assets/images/resources/testi-1-1.jpg'%}" alt="Kevin martin">
                                           </div><!-- /.testimonials-card__image -->
                                           <div class="testimonials-card__top__left">
                                               <div class="testimonials-card__rating">
@@ -635,7 +532,7 @@
                                   <div class="testimonials-card__inner">
                                       <div class="testimonials-card__top">
                                           <div class="testimonials-card__image">
-                                              <img src="assets/images/resources/testi-1-2.jpg" alt="Sarah albert">
+                                              <img src="{% static 'assets/images/resources/testi-1-2.jpg'%}" alt="Sarah albert">
                                           </div><!-- /.testimonials-card__image -->
                                           <div class="testimonials-card__top__left">
                                               <div class="testimonials-card__rating">
@@ -670,7 +567,7 @@
                                   <div class="testimonials-card__inner">
                                       <div class="testimonials-card__top">
                                           <div class="testimonials-card__image">
-                                              <img src="assets/images/resources/testi-1-3.jpg" alt="Kevin martin">
+                                              <img src="{% static 'assets/images/resources/testi-1-3.jpg'%}" alt="Kevin martin">
                                           </div><!-- /.testimonials-card__image -->
                                           <div class="testimonials-card__top__left">
                                               <div class="testimonials-card__rating">
@@ -705,7 +602,7 @@
                                   <div class="testimonials-card__inner">
                                       <div class="testimonials-card__top">
                                           <div class="testimonials-card__image">
-                                              <img src="assets/images/resources/testi-1-4.jpg" alt="Sarah albert">
+                                              <img src="{% static 'assets/images/resources/testi-1-4.jpg'%}" alt="Sarah albert">
                                           </div><!-- /.testimonials-card__image -->
                                           <div class="testimonials-card__top__left">
                                               <div class="testimonials-card__rating">
@@ -740,7 +637,7 @@
                                   <div class="testimonials-card__inner">
                                       <div class="testimonials-card__top">
                                           <div class="testimonials-card__image">
-                                              <img src="assets/images/resources/testi-1-5.jpg" alt="Kevin martin">
+                                              <img src="{% static 'assets/images/resources/testi-1-5.jpg'%}" alt="Kevin martin">
                                           </div><!-- /.testimonials-card__image -->
                                           <div class="testimonials-card__top__left">
                                               <div class="testimonials-card__rating">
@@ -775,7 +672,7 @@
                                   <div class="testimonials-card__inner">
                                       <div class="testimonials-card__top">
                                           <div class="testimonials-card__image">
-                                              <img src="assets/images/resources/testi-1-6.jpg" alt="Sarah albert">
+                                              <img src="{% static 'assets/images/resources/testi-1-6.jpg'%}" alt="Sarah albert">
                                           </div><!-- /.testimonials-card__image -->
                                           <div class="testimonials-card__top__left">
                                               <div class="testimonials-card__rating">
@@ -812,217 +709,6 @@
           </div>
       </div>
   </div>
-  <section class="blog-one">
-      <div class="container">
-          <div class="sec-title text-center">
-
-              <h6 class="sec-title__tagline">News Updates</h6><!-- /.sec-title__tagline -->
-
-              <h3 class="sec-title__title">Latest Articles & <br>News from the Blogs</h3><!-- /.sec-title__title -->
-          </div><!-- /.sec-title -->
-          <div class="blog-one__carousel hiredots-owl__carousel hiredots-owl__carousel--with-shadow hiredots-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
-"items": 1,
-"margin": 0,
-"loop": false,
-"smartSpeed": 700,
-"nav": true,
-"navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-"dots": false,
-"autoplay": false,
-"responsive": {
-  "0": {
-    "items": 1
-  },
-  "576": {
-    "items": 2,
-    "margin": 30
-  },
-  "992": {
-    "items": 3,
-    "margin": 30
-  }
-}
-}'>
-              <div class="item">
-                  <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                      <div class="blog-card__image">
-                          <img src="assets/images/blog/blog-1-1.jpg" alt="Guide to HR Adviser and Clients Lessening">
-                      </div><!-- /.blog-card__image -->
-                      <div class="blog-card__content">
-                          <div class="blog-card__date"><span>30</span>
-                              Aug</div><!-- /.blog-card__date -->
-                          <ul class="list-unstyled blog-card__meta">
-                              <li><a href="blog.html"><i class="fas fa-tags"></i>Business</a></li>
-                              <li><a href="blog-details.html"><i class="fa fa-comments"></i> 2 Comments</a></li>
-                          </ul><!-- /.list-unstyled blog-card__meta -->
-                          <h3 class="blog-card__title"><a href="blog-details.html">Guide to HR Adviser and Clients Lessening</a></h3><!-- /.blog-card__title -->
-                          <p class="blog-card__info">Lorem ipsum is simply free dolor sit amet, consect pisicing elit.</p>
-                          <a href="blog-details.html" class="blog-card__link">
-                              Read more
-                              <i class="icon-right-arrow"></i>
-                          </a><!-- /.blog-card__link -->
-                      </div><!-- /.blog-card__content -->
-                  </div><!-- /.blog-card -->
-              </div><!-- /.item -->
-              <div class="item">
-                  <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
-                      <div class="blog-card__image">
-                          <img src="assets/images/blog/blog-1-2.jpg" alt="Top Skin care tips for oily skins">
-                      </div><!-- /.blog-card__image -->
-                      <div class="blog-card__content">
-                          <div class="blog-card__date"><span>30</span>
-                              Aug</div><!-- /.blog-card__date -->
-                          <ul class="list-unstyled blog-card__meta">
-                              <li><a href="blog.html"><i class="fas fa-tags"></i>Business</a></li>
-                              <li><a href="blog-details.html"><i class="fa fa-comments"></i> 2 Comments</a></li>
-                          </ul><!-- /.list-unstyled blog-card__meta -->
-                          <h3 class="blog-card__title"><a href="blog-details.html">Top Skin care tips for oily skins</a></h3><!-- /.blog-card__title -->
-                          <p class="blog-card__info">Lorem ipsum is simply free dolor sit amet, consect pisicing elit.</p>
-                          <a href="blog-details.html" class="blog-card__link">
-                              Read more
-                              <i class="icon-right-arrow"></i>
-                          </a><!-- /.blog-card__link -->
-                      </div><!-- /.blog-card__content -->
-                  </div><!-- /.blog-card -->
-              </div><!-- /.item -->
-              <div class="item">
-                  <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
-                      <div class="blog-card__image">
-                          <img src="assets/images/blog/blog-1-3.jpg" alt="Outstanding island for winter sun">
-                      </div><!-- /.blog-card__image -->
-                      <div class="blog-card__content">
-                          <div class="blog-card__date"><span>30</span>
-                              Aug</div><!-- /.blog-card__date -->
-                          <ul class="list-unstyled blog-card__meta">
-                              <li><a href="blog.html"><i class="fas fa-tags"></i>Business</a></li>
-                              <li><a href="blog-details.html"><i class="fa fa-comments"></i> 2 Comments</a></li>
-                          </ul><!-- /.list-unstyled blog-card__meta -->
-                          <h3 class="blog-card__title"><a href="blog-details.html">Outstanding island for winter sun</a></h3><!-- /.blog-card__title -->
-                          <p class="blog-card__info">Lorem ipsum is simply free dolor sit amet, consect pisicing elit.</p>
-                          <a href="blog-details.html" class="blog-card__link">
-                              Read more
-                              <i class="icon-right-arrow"></i>
-                          </a><!-- /.blog-card__link -->
-                      </div><!-- /.blog-card__content -->
-                  </div><!-- /.blog-card -->
-              </div><!-- /.item -->
-          </div><!-- /.row -->
-      </div><!-- /.container -->
-  </section><!-- /.blog-one -->
-  <footer class="main-footer background-black">
-      <div class="main-footer__bg" style="background-image: url(assets/images/backgrounds/footer-bg.jpg);"></div>
-      <!-- /.main-footer__bg -->
-      <div class="main-footer__subscribe">
-          <div class="container">
-              <div class="main-footer__subscribe__wrapper">
-                  <div class="main-footer__subscribe__left">
-                      <span class="main-footer__subscribe__icon"><i class="icon-message"></i></span>
-                      <h3 class="main-footer__subscribe__title">Subscribe Now to Get <br>
-                          Latest Updates</h3>
-                  </div>
-                  <div class="main-footer__subscribe__right">
-                      <form action="#" data-url="MAILCHIMP_FORM_URL" class="main-footer__newsletter mc-form">
-                          <input type="text" name="EMAIL" placeholder="Email address">
-                          <button type="submit" class="fas fa-paper-plane">
-                              <span class="sr-only">submit</span><!-- /.sr-only -->
-                          </button>
-                      </form><!-- /.footer-widget__newsletter mc-form -->
-                      <div class="mc-form__response"></div><!-- /.mc-form__response -->
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="main-footer__top">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6 col-xl-5">
-                      <div class="footer-widget footer-widget--about">
-                          <a href="index.html" class="footer-widget__logo">
-                              <img src="assets/images/logo-light.png" width="125" alt="Hiredots HTML Template">
-                          </a>
-                          <p class="footer-widget__text">Lorem ipsum dolor sit amet, consect etur adi pisicing elit <br>
-                              sed do eiusmod tempor incididunt ut labore.</p>
-                          <div class="footer-widget__author">
-                              <div class="footer-widget__author__img">
-                                  <img src="assets/images/resources/footer-about-avata.png" alt="">
-                              </div>
-                              <div>
-                                  <div class="footer-widget__author__info">
-                                      <span class="footer-widget__author__tagline">Need Help?</span>
-                                      <h3 class="footer-widget__author__title"><a href="contact.html">Book Appointment </a></h3>
-                                  </div>
-                              </div>
-                          </div>
-                      </div><!-- /.footer-widget -->
-                  </div><!-- /.col-md-6 -->
-                  <div class="col-md-6 col-xl-2">
-                      <div class="footer-widget footer-widget--links">
-                          <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
-                          <ul class="list-unstyled footer-widget__links">
-                              <li><a href="about.html">About Company</a></li>
-                              <li><a href="team.html">Meet the Team</a></li>
-                              <li><a href="blog.html">News & Media</a></li>
-                              <li><a href="project.html">Our Projects</a></li>
-                              <li><a href="contact.html">Contact</a></li>
-                          </ul><!-- /.list-unstyled footer-widget__links -->
-                      </div><!-- /.footer-widget -->
-                  </div><!-- /.col-md-6 -->
-                  <div class="col-md-6 col-xl-2">
-                      <div class="footer-widget footer-widget--contact">
-                          <h2 class="footer-widget__title">Links</h2><!-- /.footer-widget__title -->
-                          <ul class="list-unstyled footer-widget__links">
-                              <li><a href="about.html">Apply Now</a></li>
-                              <li><a href="contact.html">Contract to Hire</a></li>
-                              <li><a href="team.html">Direct Hire</a></li>
-                              <li><a href="history.html">Executive Search</a></li>
-                              <li><a href="about.html">Our Solutions</a></li>
-                          </ul><!-- /.list-unstyled footer-widget__links -->
-                      </div><!-- /.footer-widget -->
-                  </div><!-- /.col-md-6 -->
-                  <div class="col-md-6 col-xl-3">
-                      <div class="footer-widget footer-widget--time">
-                          <h2 class="footer-widget__title">Contact</h2><!-- /.footer-widget__title -->
-                          <p class="footer-widget__text">66 Road Broklyn Street, 600 <br> New York, USA</p>
-                          <!-- /.footer-widget__text -->
-                          <ul class="list-unstyled footer-widget__info">
-                              <li><i class="fas fa-envelope"></i> <a href="mailto:needhelp@company.com">needhelp@company.com</a></li>
-                              <li><i class="fas fa-phone-square"></i> <a href="tel:+92(8800)-6930">+ 92 ( 8800 ) - 6930</a></li>
-                          </ul><!-- /.list-unstyled -->
-                      </div><!-- /.footer-widget -->
-                  </div><!-- /.col-md-6 -->
-              </div><!-- /.row -->
-          </div><!-- /.container -->
-      </div><!-- /.main-footer__top -->
-      <div class="main-footer__bottom">
-          <div class="container">
-              <div class="main-footer__bottom__inner">
-                  <div class="footer-widget__social">
-                      <a href="https://twitter.com">
-                          <i class="fab fa-twitter" aria-hidden="true"></i>
-                          <span class="sr-only">Twitter</span>
-                      </a>
-                      <a href="https://facebook.com">
-                          <i class="fab fa-facebook" aria-hidden="true"></i>
-                          <span class="sr-only">Facebook</span>
-                      </a>
-                      <a href="https://pinterest.com">
-                          <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                          <span class="sr-only">Pinterest</span>
-                      </a>
-                      <a href="https://instagram.com">
-                          <i class="fab fa-instagram" aria-hidden="true"></i>
-                          <span class="sr-only">Instagram</span>
-                      </a>
-                  </div><!-- /.footer-widget__social -->
-                  <p class="main-footer__copyright">
-                      &copy; Copyright <span class="dynamic-year"></span> by Hiredots HTML Template.
-                  </p>
-              </div><!-- /.main-footer__inner -->
-          </div><!-- /.container -->
-      </div><!-- /.main-footer__bottom -->
-  </footer><!-- /.main-footer -->
-
-</div><!-- /.page-wrapper -->
 
   
 {% endblock %}
