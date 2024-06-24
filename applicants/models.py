@@ -1,3 +1,4 @@
+from django.utils import timezone
 from django.db import models
 from django.core.validators import RegexValidator
 from pages.commonFun import CommonFunctions
@@ -48,11 +49,11 @@ class ApplicantOnJobs(models.Model):
         verbose_name_plural = "Applicants List on jobs"  
 
 class subscribers(models.Model):
-    subscriberid=models.AutoField(primary_key=True)
-    email=models.CharField(max_length=155,null=True,verbose_name='Email')
-    createddate=models.DateField(),
-    isactive=models.BooleanField(),
-    inactivateddate=models.DateField()
+    subscriberid = models.AutoField(primary_key=True,verbose_name='Subscription ID')
+    email = models.CharField(max_length=155, null=True, unique=True, verbose_name='Email')
+    createddate = models.DateField(default=timezone.now,verbose_name='Subcribe Date')
+    isactive = models.BooleanField(default=True,verbose_name='Active Or Not')
+    inactivateddate = models.DateField(null=True, blank=True,verbose_name='Inactivation Date')
     
     class Meta:
         verbose_name="Subcriber"

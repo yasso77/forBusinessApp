@@ -59,7 +59,7 @@
                     <ul class="list-unstyled topbar-one__info">
                         <li class="topbar-one__info__item">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:contact@forbusinesseg.com.com">contact@forbusinesseg.com</a>
+                            <a href="mailto:info@forbusinesseg.com.com">info@forbusinesseg.com</a>
                         </li>
                         <li class="topbar-one__info__item">
                             <i class="fas fa-map-marker"></i>
@@ -196,8 +196,9 @@
                                 Latest Updates</h3>
                         </div>
                         <div class="main-footer__subscribe__right">
-                            <form action="#" data-url="MAILCHIMP_FORM_URL" class="main-footer__newsletter mc-form">
-                                <input type="text" name="EMAIL" placeholder="Email address">
+                            <form method="post"  action="{% url 'subscribe' %}" class="main-footer__newsletter">                               
+                                {% csrf_token %}
+                                <input type="text" name="email" placeholder="Email address">
                                 <button type="submit" class="fas fa-paper-plane">
                                     <span class="sr-only">submit</span><!-- /.sr-only -->
                                 </button>
@@ -260,7 +261,7 @@
                                 <p class="footer-widget__text">6 Gamal Salem, Ad Doqi, Dokki <br> Giza, EGY</p>
                                 <!-- /.footer-widget__text -->
                                 <ul class="list-unstyled footer-widget__info">
-                                    <li><i class="fas fa-envelope"></i> <a href="mailto:contact@forbusinesseg.com.com">contact@forbusinesseg.com</a></li>
+                                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@forbusinesseg.com.com">info@forbusinesseg.com</a></li>
                                     <li><i class="fas fa-phone-square"></i> <a href="tel:+200109 820 6020">+ 20 ( 0109 820 6020
                                         ) </a></li>
                                 </ul><!-- /.list-unstyled -->

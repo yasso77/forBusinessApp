@@ -167,11 +167,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email backend settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.forbusinesseg.com'  # Replace with your SMTP server host
+EMAIL_HOST = 'mail.privateemail.com'  # Replace with your SMTP server host
 EMAIL_PORT = 587  # Replace with your SMTP server port
 EMAIL_USE_TLS = True  # True for TLS, False for SSL
-EMAIL_HOST_USER = 'web@forbusinesseg.com'  # Replace with your email address
-EMAIL_HOST_PASSWORD = 'your_email_password'  # Replace with your email password or app-specific password
+EMAIL_HOST_USER = 'info@forbusinesseg.com'  # Replace with your email address
+EMAIL_HOST_PASSWORD = 'Pa$$w0rd@1977'  # Replace with your email password or app-specific password
 DEFAULT_FROM_EMAIL = 'info@forbusinesseg.com'  # Replace with your default sender email
 
-CONTACT_EMAIL = 'contact@example.com'  # Replace with the email where contact form submissions should be sent
+CONTACT_EMAIL = 'info@forbusinesseg.com'  # Replace with the email where contact form submissions should be sent

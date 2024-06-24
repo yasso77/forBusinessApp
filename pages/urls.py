@@ -8,7 +8,9 @@ urlpatterns = [
      path('jobdetail/<int:jobid>',views.jobDetails,name='jobdetails'),    
      path('about', views.about, name='about'),
      path('faq', views.faq, name='faq'),
-     path('message/<str:strmessage>/', views.message, name='message'),
-     path('send_email/', views.send_email, name='send_email'),
+      path('message/<str:strmessage>/<str:msgType>/', views.message, name='message'),
+     path('send_email', views.send_email, name='send_email'),
+     path('subscribe', views.add_subscriber, name='subscribe'),
+     
      
 ]

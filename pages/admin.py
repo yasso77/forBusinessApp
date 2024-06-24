@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.shortcuts import render
 from django.utils import timezone
 from jobs.models import Jobs,Recruiters
-from applicants.models import ApplicantOnJobs
+from applicants.models import ApplicantOnJobs,subscribers
 from django.utils.html import format_html
 
 from pages.ormQuery import jobQueries
@@ -64,9 +64,14 @@ class ApplicantOnJobsAdmin(admin.ModelAdmin):
              obj.applydate = timezone.now().date()
         super().save_model(request, obj, form, change)
 
+class SubcribersAdmin(admin.ModelAdmin):
+    list_display=['subscriberid','email','createddate','isactive','inactivateddate']   
+    #list_display_links=['fullName']   
+    search_fields = ['email', 'createddate']
 # Register your models here.
 #admin.site.register(ApplicantAdmin)
 admin.site.register(ApplicantOnJobs,ApplicantOnJobsAdmin)
+admin.site.register(subscribers,SubcribersAdmin)
 
 class JobsAdmin(admin.ModelAdmin):
     list_display=['jobcode','jobtitle','jobfield','applicant_count','recruiterid','contracttype','createddate','validdate']
