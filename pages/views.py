@@ -113,7 +113,7 @@ def add_subscriber(request):
         # Save the object to the database
          new_subscriber.save()
 
-         return redirect(reverse('message', args=['Your subscription is activated successfully']))
+         return redirect(reverse('message', args=['Your subscription is activated successfully','ok']))
        except IntegrityError:
             # Handle the case where the email is already subscribed
             return redirect(reverse('message', args=['This email is already subscribed.', 'error']))
