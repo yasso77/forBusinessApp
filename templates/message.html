@@ -18,15 +18,15 @@
     <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
     <h1 style="color: darkgreen;" class="display-1">Done</h1>
     <h1 class="mb-4">Confirmation Message</h1>
-    <p style="font-size: larger;" class="mb-6">{{ msg }}</p>
+    <p style="font-size: larger;" class="mb-6">{{ message }}</p>
     <a class="hiredots-btn py-3 px-5" href="{% url 'index' %}">Go Back To Home</a>
 </div>
 {% else %}
 <div class="col-lg-6">
     <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-    <h1 style="color: red;" class="display-1">Error</h1>
+    <h1 style="color: red;" class="display-1">404</h1>
     <h1 class="mb-4">Error Message</h1>
-    <p style="font-size: larger;" class="mb-6">{{ msg }}</p>
+    <p style="font-size: larger;" class="mb-6">{{ message }}</p>
     <a class="hiredots-btn py-3 px-5" href="{% url 'index' %}">Go Back To Home</a>
 </div>
 {% endif %}

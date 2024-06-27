@@ -1,5 +1,23 @@
+import os
 from passlib.hash import bcrypt
+import uuid
+from django.utils.deconstruct import deconstructible
+@deconstructible
+class PathAndRename:
+    def __init__(self, sub_path):
+        self.path = sub_path
 
+    def __call__(self, instance, filename):
+        # Split the file name and extension
+        name, ext = os.path.splitext(filename)
+        # Generate a unique suffix with uuid
+        unique_suffix = uuid.uuid4().hex[:7]        
+        # Combine the original name with the unique suffix and extension
+        unique_filename = f"{name}_{unique_suffix}{ext}"
+        # Return the full path to the file
+        return os.path.join(self.path, unique_filename)
+
+    
 class CommonFunctions():
     def hash_password(password: str) -> str:
         return bcrypt.hash(password)

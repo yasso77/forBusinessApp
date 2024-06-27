@@ -1,7 +1,7 @@
 from django.utils import timezone
 from django.db import models
 from django.core.validators import RegexValidator
-from pages.commonFun import CommonFunctions
+from pages.commonFun import CommonFunctions,PathAndRename
 from jobs.models import Jobs  # Import the Job model from the jobs module
 
 
@@ -27,6 +27,8 @@ from jobs.models import Jobs  # Import the Job model from the jobs module
    
    
 class ApplicantOnJobs(models.Model):
+        # Usage
+    path_and_rename = PathAndRename("applicant/cvs/")
            
     incrID=models.AutoField(primary_key=True)
     jobid=models.ForeignKey(Jobs,on_delete=models.PROTECT,verbose_name='Job Code')
@@ -36,7 +38,7 @@ class ApplicantOnJobs(models.Model):
     gender = models.CharField(max_length=10, choices=CommonFunctions.genderList(),null=True, blank=True,verbose_name='Gender')
     mobile = models.CharField(max_length=15, validators=[RegexValidator(r'^\d{1,15}$', 'Enter a valid mobile number.')], null=True, blank=False,verbose_name='Mobile Number')
     coverletter=models.TextField(max_length=7000,null=True,verbose_name='Cover Letter')
-    cvFile=models.FileField(upload_to='applicant/cvs/%y/%m/%d',null=True,verbose_name='Upload CV')
+    cvFile = models.FileField(upload_to=path_and_rename, null=True, verbose_name='Upload CV')
     applydate=models.DateTimeField(verbose_name="Apply Date", auto_now_add=True)   
     isfit=models.BooleanField(verbose_name='Is fit or no?',null=True)  
 
