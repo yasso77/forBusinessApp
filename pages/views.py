@@ -40,9 +40,12 @@ def jobDetails(request, jobid):
             applicant_on_job.jobid = job_instance  # Assign the Jobs instance
             applicant_on_job.applydate = date.today()  # Set the apply date
             applicant_on_job.save()
-            return redirect(reverse('message', args=['Your application on the job is submitted successfully, we will be in contact with you','ok']))  # Change 'success_url' to the actual URL name
-    else:
-        form = applicantForm(initial={'jobid': job['jobid']})
+            context = {'message': 'Your application on the job is submitted successfully, we will be in contact with you', 'status': 'ok'}
+            
+            return render(request, 'message.html', context)
+            
+        else:
+            form = applicantForm(initial={'jobid': job['jobid']})
     
     return render(request, 'job-details.html', {'job': job, 'form': form})
 
@@ -50,9 +53,6 @@ def about(request):
        return render(request,'about.html')
 def faq(request):
        return render(request,'faq.html')
-
-def message(request,strmessage,msgType):
-       return render(request, 'message.html', {'msg': strmessage, 'msgType': msgType})
 
 def send_email(request):
    
@@ -62,11 +62,12 @@ def send_email(request):
         phone = request.POST.get('phone')
         message = request.POST.get('message')
         
+        
         # Validate email format
         try:
             validate_email(email)
         except ValidationError:
-            return render(request, 'error.html', {'error': 'Invalid email format.'})
+            return render(request, 'message.html', {'error': 'Invalid email format.'})
         
         # Email subject and content
         subject = f'Web Site Contact from {name}'
@@ -93,8 +94,9 @@ def send_email(request):
         email_message.send()
         
         
+        context = {'message': 'Your inquiry is sent successfully', 'status': 'ok'}        
         # Redirect after successful submission
-        return redirect(reverse('message', args=['Your Inquery is sent successfully','ok']))
+        return render(request, 'message.html', context)
     
     return render(request, 'error.html', {'error': 'Method not allowed.'})
 
@@ -112,8 +114,13 @@ def add_subscriber(request):
         
         # Save the object to the database
          new_subscriber.save()
-
-         return redirect(reverse('message', args=['Your subscription is activated successfully','ok']))
+        
+        # Your subscription logic here
+         context = {'message': 'Your subscription is activated successfully', 'status': 'ok'}
+        
        except IntegrityError:
             # Handle the case where the email is already subscribed
-            return redirect(reverse('message', args=['This email is already subscribed.', 'error']))
+         context = {'message': 'This email is already subscribed.', 'status': 'error'}
+            
+            
+       return render(request, 'message.html', context)
