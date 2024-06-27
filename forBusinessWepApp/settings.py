@@ -93,7 +93,10 @@ DATABASES = {
 		'PASSWORD': 'Cocacola!1977',
 		'HOST':'localhost',
 		'PORT':'3306',
-	}
+        'OPTIONS': {
+                    'charset': 'utf8mb4',
+                },
+            }
 }
 
 # DATABASES = {
@@ -104,6 +107,10 @@ DATABASES = {
 # 		'PASSWORD': 'Cocacola!1977',
 # 		'HOST':'127.0.0.1',
 # 		'PORT':'3306',
+#        'OPTIONS': {
+#                            'charset': 'utf8mb4',
+#                       },
+#                   }
 # 	}
 # }
 

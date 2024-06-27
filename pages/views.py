@@ -30,6 +30,7 @@ def jobDetails(request, jobid):
     if not job:
         # Handle the case where no job is found
         return render(request, 'job_not_found.html', {'jobid': jobid})
+
     # Get the Jobs instance
     job_instance = jobQueries.get_jobInstance(jobid)
     
@@ -41,13 +42,12 @@ def jobDetails(request, jobid):
             applicant_on_job.applydate = date.today()  # Set the apply date
             applicant_on_job.save()
             context = {'message': 'Your application on the job is submitted successfully, we will be in contact with you', 'status': 'ok'}
-            
             return render(request, 'message.html', context)
-            
-        else:
-            form = applicantForm(initial={'jobid': job['jobid']})
+    else:
+        form = applicantForm(initial={'jobid': job['jobid']})
     
     return render(request, 'job-details.html', {'job': job, 'form': form})
+
 
 def about(request):
        return render(request,'about.html')

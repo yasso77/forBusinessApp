@@ -126,13 +126,13 @@ class JobsAdmin(admin.ModelAdmin):
     
     
 class RecruitersAdmin(admin.ModelAdmin):
-    list_display = ('recruiterid','recruitername','recruiter_logo' ,'locatedin','businessfield','isactive', 'createddate')
+    list_display = ('recruiter_logo','recruitername','locatedin','businessfield','isactive', 'createddate')
     list_display_links=['recruitername']
     exclude = ['createddate']  # List the 
     
     def recruiter_logo(self, obj):
-        if obj.recruiterid.recruiterlogo:
-            return format_html('<img src="{}" width="100" />', obj.recruiterid.recruiterlogo.url)
+        if obj.recruiterlogo:
+            return format_html('<img src="{}" width="75" />', obj.recruiterlogo.url)
         return "No Logo"
     recruiter_logo.short_description = 'Recruiter Logo'
         
