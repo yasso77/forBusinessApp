@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="main-header__link">
-                    <a class="main-header__btn" href="contact.html">Ask  <br> Appointment</a>
+                    <a class="main-header__btn" href="{%url 'contact'%}">Ask  <br> Appointment</a>
                 </div>
                 <div class="mobile-nav__btn mobile-nav__toggler">
                     <span></span>
@@ -225,7 +225,7 @@
                                     <div>
                                         <div class="footer-widget__author__info">
                                             <span class="footer-widget__author__tagline">Need Help?</span>
-                                            <h3 class="footer-widget__author__title"><a href="contact.html">Book Appointment </a></h3>
+                                            <h3 class="footer-widget__author__title"><a href="{%url 'contact'%}">Book Appointment </a></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -262,8 +262,7 @@
                                 <!-- /.footer-widget__text -->
                                 <ul class="list-unstyled footer-widget__info">
                                     <li><i class="fas fa-envelope"></i> <a href="mailto:info@forbusinesseg.com.com">info@forbusinesseg.com</a></li>
-                                    <li><i class="fas fa-phone-square"></i> <a href="tel:+200109 820 6020">+ 20 ( 0109 820 6020
-                                        ) </a></li>
+                                    <li><i class="fas fa-phone-square"></i> <a href="tel:+200109 820 6020">+ 20 ( 0109 820 6020) </a></li>
                                 </ul><!-- /.list-unstyled -->
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-md-6 -->
@@ -311,7 +310,7 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="{% static 'assets/images/logo-light.png' %}" width="155" alt=""></a>
+                <a href="{%url 'index'%}" aria-label="logo image"><img src="{% static 'assets/images/logo-light.png' %}" width="155" alt=""></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -319,7 +318,7 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:contact@hiredots.com">contact@hiredots.com</a>
+                    <a href="mailto:info@forbusinesseg.com">info@forbusinesseg.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
