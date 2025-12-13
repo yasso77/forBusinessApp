@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'pages',
     'applicants',
     'jobs',
+    'rest_framework',
 
 ]
 

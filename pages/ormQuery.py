@@ -12,7 +12,7 @@ class jobQueries():
         # Querying Jobs with conditions and including related Recruiters fields
         jobsList = Jobs.objects.filter(validdate__gt=today, recruiterid__isactive=True).select_related('recruiterid').values(
             'jobid', 'jobcode','contracttype', 'jobtitle','salary','placeofwork', 'validdate', 'createddate',
-            'recruiterid__recruitername', 'recruiterid__recruiterlogo'
+            'recruiterid__recruitername', 'recruiterid__recruiterlogo','recruiterid__description'
         )
         
         return jobsList
@@ -20,7 +20,7 @@ class jobQueries():
     def get_jobDetails(jobid):
         jobdetails = Jobs.objects.filter(jobid=jobid).select_related('recruiterid').values(
         'jobid', 'jobcode','qualifications','description', 'contracttype', 'jobtitle', 'salary', 'placeofwork', 'validdate', 'createddate',
-        'recruiterid__recruitername', 'recruiterid__recruiterlogo'
+        'recruiterid__recruitername', 'recruiterid__recruiterlogo','recruiterid__description'
     ).first()
         return jobdetails
     

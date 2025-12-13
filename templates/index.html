@@ -6,6 +6,7 @@
 
 
 {% block content %}
+
     <!-- main-slider-start -->
     <section class="main-slider-one">
       <div class="main-slider-one__carousel hiredots-owl__carousel owl-carousel" data-owl-options='{
@@ -33,9 +34,9 @@
                               <div class="main-slider-one__content">
                                   <div class="main-slider-one__image"><img src="{% static 'assets/images/shapes/slider-1-shape-2.png'%}" alt="4 Business"></div><!-- slider-layer -->
                                   <h2 class="main-slider-one__title">Right<br> People for<br> the Business</h2><!-- slider-title -->
-                                  <div class="main-slider-one__btn">
+                                  {% comment %} <div class="main-slider-one__btn">
                                       <a href="services.html" class="hiredots-btn"><span>Discover More</span></a><!-- slider-btn -->
-                                  </div>
+                                  </div> {% endcomment %}
                               </div>
                           </div>
                       </div>
@@ -53,9 +54,9 @@
                               <div class="main-slider-one__content">
                                   <div class="main-slider-one__image"><img src="{% static 'assets/images/shapes/slider-1-shape-2.png'%}" alt="4 Business"></div><!-- slider-layer -->
                                   <h2 class="main-slider-one__title">Right<br> People for<br> the Business</h2><!-- slider-title -->
-                                  <div class="main-slider-one__btn">
+                                  {% comment %} <div class="main-slider-one__btn">
                                       <a href="services.html" class="hiredots-btn"><span>Discover More</span></a><!-- slider-btn -->
-                                  </div>
+                                  </div> {% endcomment %}
                               </div>
                           </div>
                       </div>
@@ -73,9 +74,9 @@
                               <div class="main-slider-one__content">
                                   <div class="main-slider-one__image"><img src="{% static 'assets/images/shapes/slider-1-shape-2.png'%}" alt="4 Business"></div><!-- slider-layer -->
                                   <h2 class="main-slider-one__title">Right<br> People for<br> the Business</h2><!-- slider-title -->
-                                  <div class="main-slider-one__btn">
+                                  {% comment %} <div class="main-slider-one__btn">
                                       <a href="services.html" class="hiredots-btn"><span>Discover More</span></a><!-- slider-btn -->
-                                  </div>
+                                  </div> {% endcomment %}
                               </div>
                           </div>
                       </div>
@@ -84,8 +85,106 @@
           </div>
       </div>
   </section>
+
+    <!-- Call To Action End -->
+    <div class="client-carousel ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h3 class="client-carousel__title">Trusted and funded by more<br> then 800 companies</h3>
+                </div>
+                <div class="col-xl-9">
+                    <div class="client-carousel__one hiredots-owl__carousel owl-theme owl-carousel" data-owl-options='{
+                "items": 5,
+                "margin": 65,
+                "smartSpeed": 700,
+                "loop":true,
+                "autoplay": 6000,
+                "nav":false,
+                "dots":false,
+                "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+                "responsive":{
+                    "0":{
+                        "items":1,
+                        "margin": 0
+                    },
+                    "360":{
+                        "items":2,
+                        "margin": 30
+                    },
+                    "575":{
+                        "items":3,
+                        "margin": 30
+                    },
+                    "768":{
+                        "items":3,
+                        "margin": 40
+                    },
+                    "992":{
+                        "items": 4,
+                        "margin": 40
+                    },
+                    "1200":{
+                        "items": 5
+                    }
+                }
+                }'>
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand2.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand3.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand4.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand5.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand6.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand7.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand8.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__one__item">
+                            <img src="{% static 'assets/images/resources/brand9.png'%}" alt="4 Business">
+                        </div><!-- /.owl-slide-item-->
+                       
+                    </div><!-- /.thm-owl__slider -->
+                </div>
+            </div>
+            <div class="client-carousel__border"></div>
+        </div><!-- /.container -->
+    </div><!-- /.client-carousel -->
   <!-- main-slider-end -->
   <!-- Feature Start -->
+  <section class="cta-two" style="background-image: url({% static 'assets/images/resources/cta-2-2.png'%});">
+    <div class="cta-two__shape-one"><img src="{% static 'assets/images/shapes/cta-2-shape-1.png'%}" alt="4 Business"></div>
+    <div class="cta-two__shape-two"><img src="{% static 'assets/images/shapes/cta-2-shape-2.png'%}" alt="4 Business"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="200ms">
+                <div class="cta-two__content">
+                    <div class="cta-two__sub-title"><img src="{% static 'assets/images/resources/cta-2-sub-title.png'%}" alt="4 Business"></div>
+                    <h2 class="cta-two__title">Hire Your Next Candidate on For Business</h2>
+                    <a href="{%url 'jobs'%}" class="hiredots-btn"><span>Discover more</span></a><!-- /.btn -->
+                </div>
+            </div>
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="300ms">
+                <div class="cta-two__image">
+                    <img src="{% static 'assets/images/shapes/cta-2-1.png'%}" alt="4 Business">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
   <section class="feature-one">
       <div class="container">
           <div class="row gutter-y-30">
@@ -97,9 +196,9 @@
                       <div class="feature-one__item__content">
                           <div class="feature-one__item__ball"></div>
                           <div class="feature-one__item__icon"><span class="icon-solution"></span></div>
-                          <h3 class="feature-one__item__title">Recruitement <br>Solutions</h3>
-                          <p class="feature-one__item__text">Lorem ipsum dolor sit amet sed consectur adipiscing elit.</p>
-                          <a href="about.html" class="hiredots-btn"><span>Find Your Solution</span></a>
+                          <h3 class="feature-one__item__title">Recruitment <br>Solutions</h3>
+                          <p class="feature-one__item__text">Our recruitment solutions are designed to connect businesses with top talent, ensuring the perfect fit for every role..</p>
+                          <a href="{%url 'contact'%}" class="hiredots-btn"><span>Find Your Solution</span></a>
                       </div>
                   </div><!-- feature-item -->
               </div>
@@ -112,8 +211,8 @@
                           <div class="feature-one__item__ball"></div>
                           <div class="feature-one__item__icon"><span class="icon-creative-idea"></span></div>
                           <h3 class="feature-one__item__title">Improved <br>Resources</h3>
-                          <p class="feature-one__item__text">Lorem ipsum dolor sit amet sed consectur adipiscing elit.</p>
-                          <a href="about.html" class="hiredots-btn"><span>Find Your Solution</span></a>
+                          <p class="feature-one__item__text">We offer improved resources to optimize performance and drive business success.</p>
+                          <a href="{%url 'contact'%}" class="hiredots-btn"><span>Find Your Solution</span></a>
                       </div>
                   </div><!-- feature-item -->
               </div>
@@ -126,14 +225,17 @@
                           <div class="feature-one__item__ball"></div>
                           <div class="feature-one__item__icon"><span class="icon-mission"></span></div>
                           <h3 class="feature-one__item__title">Leadership <br>Training</h3>
-                          <p class="feature-one__item__text">Lorem ipsum dolor sit amet sed consectur adipiscing elit.</p>
-                          <a href="about.html" class="hiredots-btn"><span>Find Your Solution</span></a>
+                          <p class="feature-one__item__text">We provide comprehensive leadership training to empower individuals and enhance organizational growth..</p>
+                          <a href="{%url 'contact'%}" class="hiredots-btn"><span>Find Your Solution</span></a>
                       </div>
                   </div><!-- feature-item -->
               </div>
           </div>
       </div>
   </section>
+
+  
+    
   <!-- Feature End -->
   <section class="about-one">
       <div class="container">
@@ -156,8 +258,7 @@
                           <h3 class="sec-title__title">Reliable & Cost Efficiant <br>Recruitment Agency</h3><!-- /.sec-title__title -->
                       </div><!-- /.sec-title -->
                       <p class="about-one__content__text">
-                          Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor incididunt labore dolore magna aliquaenim ad minim.
-                          Sed risus augue, commodo ornare felis non, eleifend molestie metus pharetra eleifend.
+                        We are a trusted recruitment agency dedicated to connecting top talent with the right opportunities. Our cost-efficient solutions ensure businesses find skilled professionals without exceeding budgets. Let us streamline your hiring process with expertise and reliability.
                       </p>
                       <div class="row">
                           <div class="col-md-6">
@@ -248,7 +349,7 @@
                               <a href="service-d-consulting.html">HR Consulting</a>
                           </h3><!-- /.service-one-card__title -->
 
-                          <p class="service-one-card__text">Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod</p>
+                          <p class="service-one-card__text">We provide expert HR consulting services to help businesses optimize their workforce and streamline operations. From talent management to compliance, we offer tailored solutions to drive success.</p>
                           <!-- /.service-one-card__text -->
                       </div><!-- /.service-one-card__content -->
                       <a href="service-d-consulting.html" class="service-one-card__link">
@@ -271,7 +372,7 @@
                               <a href="service-d-resources.html">Tech Resources</a>
                           </h3><!-- /.service-one-card__title -->
 
-                          <p class="service-one-card__text">Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod</p>
+                          <p class="service-one-card__text">We leverage technology to enhance HR processes, making recruitment, payroll, and employee management more efficient. Our innovative solutions help businesses streamline operations and improve workforce productivity.</p>
                           <!-- /.service-one-card__text -->
                       </div><!-- /.service-one-card__content -->
                       <a href="service-d-resources.html" class="service-one-card__link">
@@ -294,7 +395,7 @@
                               <a href="service-d-resources.html">Staffing Solution</a>
                           </h3><!-- /.service-one-card__title -->
 
-                          <p class="service-one-card__text">Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod</p>
+                          <p class="service-one-card__text">We provide flexible staffing solutions to help businesses find the right talent quickly and efficiently. Whether temporary, permanent, or project-based roles, we ensure a perfect fit for your needs.</p>
                           <!-- /.service-one-card__text -->
                       </div><!-- /.service-one-card__content -->
                       <a href="service-d-resources.html" class="service-one-card__link">
@@ -311,7 +412,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-8 col-xl-8 wow fadeInLeft" data-wow-delay="200ms">
-                  <h2 class="cta-one__title">Hiredots Trusted Staffing & Recruitment Agency</h2>
+                  <h2 class="cta-one__title">For Business Trusted Staffing & Recruitment Agency</h2>
               </div>
               <div class="col-md-4 col-xl-4 text-end wow fadeInRight" data-wow-delay="300ms">
                   <a href="about.html" class="hiredots-btn hiredots-btn--base"><span>Discover more</span></a><!-- /.btn -->
@@ -328,128 +429,32 @@
               </div>
               <div class="col-lg-10 col-xl-8 wow fadeInUp">
                   <div class="cta-one__content">
-                      <h3 class="cta-one__content__title">Hiredots Working Advantages</h3>
+                      <h3 class="cta-one__content__title">For Business Working Advantages</h3>
                       <div class="cta-one__content__list">
                           <div class="cta-one__content__list__icon"><i class="icon-recruitment"></i></div>
                           <h3 class="cta-one__content__list__title">Sourcing Best <br>Resource</h3>
-                          <p class="cta-one__content__list__info">Sed non odio non elit porttit sit tincidunt.<br> Donec fermentum, elit sit amet</p>
+                          <p class="cta-one__content__list__info">We strategically source top talent to ensure the perfect fit for your business needs.</p>
                       </div>
                       <div class="cta-one__content__list cta-one__content__list--bg">
                           <div class="cta-one__content__list__icon"><i class="icon-background-check"></i></div>
                           <h3 class="cta-one__content__list__title">Save Your <br>Time &amp; Money</h3>
-                          <p class="cta-one__content__list__info">Sed non odio non elit porttit sit tincidunt.<br> Donec fermentum, elit sit amet</p>
+                          <p class="cta-one__content__list__info">Our efficient hiring solutions help you save time and reduce recruitment costs.</p>
                       </div>
                       <div class="cta-one__content__list">
                           <div class="cta-one__content__list__icon"><i class="icon-save-time"></i></div>
                           <h3 class="cta-one__content__list__title">Partners in <br>Team Building</h3>
-                          <p class="cta-one__content__list__info">Sed non odio non elit porttit sit tincidunt.<br> Donec fermentum, elit sit amet</p>
+                          <p class="cta-one__content__list__info">We collaborate with you to build strong, high-performing teams for lasting success.</p>
                       </div>
                   </div>
               </div>
           </div>
       </div>
   </section>
-  <!-- Call To Action End -->
-  <div class="client-carousel ">
-      <div class="container">
-          <div class="row">
-              <div class="col-xl-3">
-                  <h3 class="client-carousel__title">Trusted and funded by more<br> then 800 companies</h3>
-              </div>
-              <div class="col-xl-9">
-                  <div class="client-carousel__one hiredots-owl__carousel owl-theme owl-carousel" data-owl-options='{
-              "items": 5,
-              "margin": 65,
-              "smartSpeed": 700,
-              "loop":true,
-              "autoplay": 6000,
-              "nav":false,
-              "dots":false,
-              "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-              "responsive":{
-                  "0":{
-                      "items":1,
-                      "margin": 0
-                  },
-                  "360":{
-                      "items":2,
-                      "margin": 30
-                  },
-                  "575":{
-                      "items":3,
-                      "margin": 30
-                  },
-                  "768":{
-                      "items":3,
-                      "margin": 40
-                  },
-                  "992":{
-                      "items": 4,
-                      "margin": 40
-                  },
-                  "1200":{
-                      "items": 5
-                  }
-              }
-              }'>
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand-1-1.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand2.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand3.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand4.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand5.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand6.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand7.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand8.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                      <div class="client-carousel__one__item">
-                          <img src="{% static 'assets/images/resources/brand9.png'%}" alt="4 Business">
-                      </div><!-- /.owl-slide-item-->
-                     
-                  </div><!-- /.thm-owl__slider -->
-              </div>
-          </div>
-          <div class="client-carousel__border"></div>
-      </div><!-- /.container -->
-  </div><!-- /.client-carousel -->
-  
+
   <!-- Call To Action Start -->
-  <section class="cta-two" style="background-image: url({% static 'assets/images/resources/cta-2-2.png'%});">
-      <div class="cta-two__shape-one"><img src="{% static 'assets/images/shapes/cta-2-shape-1.png'%}" alt="4 Business"></div>
-      <div class="cta-two__shape-two"><img src="{% static 'assets/images/shapes/cta-2-shape-2.png'%}" alt="4 Business"></div>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-7 wow fadeInLeft" data-wow-delay="200ms">
-                  <div class="cta-two__content">
-                      <div class="cta-two__sub-title"><img src="{% static 'assets/images/resources/cta-2-sub-title.png'%}" alt="4 Business"></div>
-                      <h2 class="cta-two__title">Hire Your Next Candidate on Hiredots</h2>
-                      <a href="about.html" class="hiredots-btn"><span>Discover more</span></a><!-- /.btn -->
-                  </div>
-              </div>
-              <div class="col-lg-5 wow fadeInRight" data-wow-delay="300ms">
-                  <div class="cta-two__image">
-                      <img src="{% static 'assets/images/shapes/cta-2-1.png'%}" alt="4 Business">
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+ 
   <!-- Call To Action End -->
-  <div class="testimonials-one background-gray">
+  {% comment %} <div class="testimonials-one background-gray">
       <div class="testimonials-one__shape">
           <img src="{% static 'assets/images/shapes/testimonail-share.png'%}" alt="">
       </div>
@@ -706,7 +711,7 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> {% endcomment %}
 
   
 {% endblock %}

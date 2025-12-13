@@ -21,7 +21,7 @@
             <div class="container">
                 <h2 class="page-header__title">Job Details</h2>
                 <ul class="hiredots-breadcrumb list-unstyled">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{%url 'index'%}">Home</a></li>
                     <li><span>Job Details</span></li>
                 </ul><!-- /.thm-breadcrumb list-unstyled -->
             </div><!-- /.container -->
@@ -36,7 +36,7 @@
                     <div class="col-lg-8" style="margin-top: 0px !important;">
                         <div class="d-flex align-items-center mb-5">
                             {% if job.recruiterid__recruiterlogo %}
-                            <img class="flex-shrink-0 img-fluid border rounded" src="/forBusinessWebApp/media/{{ job.recruiterid__recruiterlogo }}" alt="" style="width: 80px; height: 80px;">
+                            <img class="flex-shrink-0 img-fluid border rounded" src="/media/{{ job.recruiterid__recruiterlogo }}" alt="" style="width: 80px; height: 80px;">
                             {% else %}
                             <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;"> 
                             {% endif %}
@@ -158,7 +158,8 @@
                         </div>
                         <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
                             <h4 class="mb-4">Company Detail</h4>
-                            <p class="m-0">Ipsum dolor ipsum accusam stet et et diam dolores, sed rebum sadipscing elitr vero dolores. Lorem dolore elitr justo et no gubergren sadipscing, ipsum et takimata aliquyam et rebum est ipsum lorem diam. Et lorem magna eirmod est et et sanctus et, kasd clita labore.</p>
+                           <p class="m-0">{{ job.recruiterid__description }}</p>
+
                         </div>
                     </div>
                 </div>
